@@ -20,6 +20,17 @@
 			"git add"
 		]
 	},
+	"checkmate": {
+		"verbose": false,
+		"silentShell": true,
+		"programs": [
+			"node",
+			"npm",
+			"react-native",
+			"watchman",
+			"xcodebuild"
+		]
+	},
 	"dependencies": {
 		"@react-native-community/masked-view": "^0.1.7",
 		"@react-navigation/native": "^5.0.10",
@@ -67,6 +78,7 @@
 		"lint-staged": "^10.0.8",
 		"metro-react-native-babel-preset": "^0.56.0",
 		"prettier": "^1.19.1",
+		"react-native-checkmate": "^0.2.0",
 		"react-test-renderer": "16.9.0",
 		"typescript": "^3.7.3"
 	},
