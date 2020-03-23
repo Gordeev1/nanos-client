@@ -19,18 +19,22 @@ interface IProps {
 
 const prepareData = (platforms?: CampaignPlatforms): IChartItem[] | undefined =>
 	platforms &&
-	platformSummaryKeys.map(summaryKey => {
-		const data = (Object.keys(platforms) as Array<Partial<Platforms>>).map(platformKey => {
-			const value =
-				summaryKey === 'total_budget' || summaryKey === 'remaining_budget'
-					? platforms[platformKey][summaryKey]
-					: platforms[platformKey].insights[summaryKey];
+	platformSummaryKeys
+		.map(summaryKey => {
+			const data = (Object.keys(platforms) as Array<Partial<Platforms>>)
+				.map(platformKey => {
+					const value =
+						summaryKey === 'total_budget' || summaryKey === 'remaining_budget'
+							? platforms[platformKey][summaryKey]
+							: platforms[platformKey].insights[summaryKey];
 
-			return { x: platformKey, y: value };
-		});
+					return { x: platformKey, y: value };
+				})
+				.filter(({ y }) => y);
 
-		return { summaryKey, data };
-	});
+			return { summaryKey, data };
+		})
+		.filter(({ data }) => Boolean(data.length));
 
 const carouselRef = createRef<CarouselStatic<IChartItem>>();
 const { width } = Dimensions.get('window');
