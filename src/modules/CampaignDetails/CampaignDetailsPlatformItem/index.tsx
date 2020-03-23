@@ -5,7 +5,6 @@ import { ICampaignPlatform } from '@LTypes/campaign';
 import { iconByPlatform } from '@utils/platforms';
 import { translate } from '@i18n';
 import { StyledCard, Header, Title, Logo, Section, SectionTitle } from './styled';
-import { View } from 'react-native';
 
 interface IProps {
 	platform: ICampaignPlatform;

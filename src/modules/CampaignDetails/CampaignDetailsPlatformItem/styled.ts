@@ -1,4 +1,4 @@
-import { View, Text, Dimensions } from 'react-native';
+import { View, Text } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from '@utils/styled-components';
 import Card from '@components/Card';

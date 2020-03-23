@@ -1,12 +1,11 @@
 import React, { memo, useCallback } from 'react';
+import { View } from 'react-native';
 import { ICampaign, ICampaignPreview } from '@LTypes/campaign';
 import { useNavigation } from '@react-navigation/native';
 import { MAIN_SCENES } from '@scenes/Main/scenes';
 import CampaignStatusBadge from '@modules/Shared/CampaignStatus/Badge';
 import PlatformsBadges from '@modules/Shared/PlatformsBadges';
-import { Platforms } from '@LTypes/platform';
 import { StyledCard, Header, Goal, Title } from './styled';
-import { View } from 'react-native';
 
 interface IProps {
 	item: ICampaign | ICampaignPreview;
