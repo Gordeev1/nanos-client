@@ -1,0 +1,70 @@
+{
+	"campaigns": {
+		"listTitle": "Campaigns",
+		"listEmptyNote": "Looks like you don't have campaigns." // \nLet's create new one -> press '+'"
+	},
+	"campaignDetails": {
+		"summary": {
+			"title": "Summary"
+		},
+		"platforms": {
+			"title": "Platforms",
+			"audience": {
+				"title": "Audience"
+			},
+			"preview": {
+				"title": "Preview",
+				"linkLabel": "Link"
+			}
+		}
+	},
+	"campaignsSummary": {
+		"labels": {
+			"impressions": "Total impressions",
+			"clicks": "Total clicks",
+			"cost_per_click": "Average CPC"
+		}
+	},
+	"campaign": {
+		"keys": {
+			"total_budget": "Budget",
+			"remaining_budget": "Remaining budget",
+			"impressions": "Impressions",
+			"clicks": "Clicks",
+			"website_visits": "Website visits",
+			"nanos_score": "Nanos score",
+			"cost_per_click": "Cost per click",
+			"click_through_rate": "Click through rate",
+			"advanced_kpi_1": "Advanced KPI #1",
+			"advanced_kpi_2": "Advanced KPI #2"
+		},
+		"audienceKeys": {
+			"languages": "Languages",
+			"genders": "Genders",
+			"age_range": "Age range",
+			"locations": "Locations",
+			"interests": "Interests",
+			"KeyWords": "Keywords"
+		},
+		"statusLabels": {
+			"Delivering": "Delivering",
+			"Scheduled": "Scheduled",
+			"Ended": "Ended"
+		}
+	},
+	"platforms": {
+		"labels": {
+			"facebook": "Facebook",
+			"instagram": "Instagram",
+			"google": "Google"
+		}
+	},
+	"errors": {
+		"general": "Error has occurred",
+		"unknown": "Something went wrong",
+		"campaigns": {
+			"loadFail": "Failed to load campaigns",
+			"loadDetailsFail": "Failed to load campaign details"
+		}
+	}
+}
