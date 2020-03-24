@@ -37,5 +37,5 @@ react-native (run-ios / run-android)
 -   `i18n-js` and `react-native-localize` - used for internationalization.
 -   `react-native-config` - used to expose environment variables to follow [12-FactorApp](https://12factor.net/config).
 -   `react-native-fast-image` - replaced build-in image library since it offers performance improvements and cache feature.
--   `victory-native`, `react-native-svg` - used for chats.
+-   `victory-native`, `react-native-svg` - used for charts.
 -   `prettier`, `husky`, `lint-staged` - pre-commit linting, validation and formatting.
