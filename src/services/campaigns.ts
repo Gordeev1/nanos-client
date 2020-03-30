@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 import ApiService from '@services/api';
-import { ICampaign, CampaignStatus, ICampaignsSummary } from '@LTypes/campaign';
+import { ICampaign, CampaignStatus, ICampaignsSummary, ICampaignPreview } from '@LTypes/campaign';
 
 export interface ILoadCampaignsQuery {
 	status: CampaignStatus;
@@ -10,8 +10,8 @@ export interface ILoadCampaignsQuery {
 class CampaignsService {
 	listLimit = 10;
 
-	load(query: ILoadCampaignsQuery): Promise<AxiosResponse<ICampaign[]>> {
-		return ApiService.client.get<ICampaign[]>('/campaigns', {
+	load(query: ILoadCampaignsQuery): Promise<AxiosResponse<ICampaignPreview[]>> {
+		return ApiService.client.get<ICampaignPreview[]>('/campaigns', {
 			params: { ...query, limit: this.listLimit },
 		});
 	}
