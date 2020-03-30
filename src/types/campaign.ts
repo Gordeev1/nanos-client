@@ -61,7 +61,7 @@ export interface ICampaign {
 	platforms: CampaignPlatforms;
 }
 
-export interface ICampaignPreview extends Omit<ICampaign, 'platforms'> {}
+export interface ICampaignPreview extends Omit<ICampaign, 'platforms' | 'total_budget'> {}
 
 export interface ICampaignSummary
 	extends ICampaignPlatformInsights,
